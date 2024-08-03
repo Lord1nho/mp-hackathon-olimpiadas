@@ -3,17 +3,44 @@ body {
     padding: 0;
 }
 
-.tab_nav {
-    padding: 8px;
-    background-color: rgb(199, 189, 189);
-    height: fit-content
+.tab-nav {
+    display: flex;
+    padding: 12px;
+    height: fit-content;
+    justify-content: space-between;
 }
 
-.logo_home {
+.logo-home {
     display: flex;
     align-items: center;
 }
 
-.logo_home img {
-    width: 5%;
+.logo-home img {
+    width: 10%;
 }
+.logo-home span {
+    margin: 4px;
+    font-size: 32px;
+    color: #0055A4;
+    font-weight: 800;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu button{
+ margin: 16px;
+ font-size: 16px;
+ background-color: transparent;
+ font-weight: 800;
+ border: none;
+}
+
+.menu button:hover{
+    font-size: 16px;
+    background-color: #EF4135;
+    color: #d4d4d4;
+    cursor: pointer;
+   }
