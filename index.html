@@ -12,33 +12,26 @@
 <body>
  <nav class="tab-nav">
         <div class="logo-home">
-        <img src="assets/logotipo-dos-jogos-olimpicos.png">
+        <img src="assets/logotipo-dos-jogos-olimpicos.png" alt="Logo dos Jogos olímpicos">
         <span>Olimpíadas 2024</span></div>
 
         <section class="menu">
-            <button onclick="getCountries()">Painel Geral</button>
+            <button>Painel Geral</button>
             <button>Próximos Eventos</button>
             <button>Eventos Finalizados</button>
         </section>
  </nav>
  
  <!-- ESSA PARTE NÃO ESTÁ 100% responsiva no styles--> 
-<section class="table_medal">
-    <h2>Quadro de Medalhas</h2>
-    <table>
+<section class="medal_section">
+    <h2>Top 30 das Olimpíadas</h2>
+    <table id="medal_table">
     <tr>
         <td>País</td>
         <td>OURO</td>
         <td>PRATA</td>
         <td>BRONZE</td>
         <td>Total</td>
-    </tr>
-    <tr>
-        <td>--</td>
-        <td>--</td>
-        <td>--</td>
-        <td>--</td>
-        <td>--</td>
     </tr>
 </table></section>
 <script src="./scripts/script.js"></script>
