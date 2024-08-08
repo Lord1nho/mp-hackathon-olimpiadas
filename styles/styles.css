@@ -17,8 +17,6 @@ body {
     justify-content: space-between;
     background-color: transparent;
     text-transform: uppercase;
-    box-shadow: inset;
- 
 }
 
 .logo-home {
@@ -47,7 +45,7 @@ body {
  border: none;
 }
 
-.menu button:hover{
+.menu button:hover {
     font-size: 16px;
     background-color: #EF4135;
     border-radius: 3rem;
@@ -66,7 +64,6 @@ ESSA PARTE NÃO ESTÁ 100% responsiva OK!
     flex-direction: column;
     align-items: center; 
     margin-top: 12px;
-    margin-bottom: 12px;
     background-color: #d4d4d4;
    }
 
@@ -75,6 +72,7 @@ table {
     border: 6px solid #EF4135;
     border-collapse: collapse;
     text-transform: uppercase;
+    margin: 4px;
    }
 
    table th {
@@ -101,7 +99,7 @@ nesse elemento brasil position será adicionado um estilo destaque para o brasil
 */
 
 .brasil_position {
-    background-color: green;
+    background-color: #93bf85;
 }
 
 
@@ -113,11 +111,38 @@ nesse elemento brasil position será adicionado um estilo destaque para o brasil
 
 footer {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-top: 12px;
-    padding: 12px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 24px;
     font-size: 1rem;
     font-weight: 700;
     position: sticky;
 }
+
+
+.links {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.links a{
+    margin: 4px;
+    font-size: 16px;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 3rem;
+    color: black;
+    font-weight: 800;
+    border: none;
+   }
+   
+.links a:hover {
+       font-size: 16px;
+       background-color: #EF4135;
+       border-radius: 3rem;
+       color: #d4d4d4;
+       cursor: pointer;
+      }
