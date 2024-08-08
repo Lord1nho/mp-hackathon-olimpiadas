@@ -69,7 +69,7 @@ ESSA PARTE NÃO ESTÁ 100% responsiva OK!
 
 table {
     width: 50%;
-    border: 6px solid #EF4135;
+    border: none;
     border-collapse: collapse;
     text-transform: uppercase;
     margin: 4px;
