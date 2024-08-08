@@ -22,19 +22,21 @@ async function getCountries() {
     let line = ''
     for (let i = 0; i < top30.length; i++) {
         if (top30[i].name == "Brasil") {
-            line += `<tr class="brasil_position"><td>${top30[i].name}</td>
-        <td>${top30[i].gold_medals}</td>
-        <td>${top30[i].silver_medals}</td>
-        <td>${top30[i].bronze_medals}</td>
-        <td>${top30[i].total_medals}</td>
+            line += `<tr class="brasil_position"><td><img src=${top30[i].flag_url}>${top30[i].name}</td>
+        <td class="quant_medals">${top30[i].gold_medals}</td>
+        <td class="quant_medals">${top30[i].silver_medals}</td>
+        <td class="quant_medals">${top30[i].bronze_medals}</td>
+        <td class="quant_medals">${top30[i].total_medals}</td>
         </tr>`;
+        } else {
+            line += `<tr><td><img src=${top30[i].flag_url}>${top30[i].name}</td>
+            <td class="quant_medals">${top30[i].gold_medals}</td>
+            <td class="quant_medals">${top30[i].silver_medals}</td>
+            <td class="quant_medals">${top30[i].bronze_medals}</td>
+            <td class="quant_medals">${top30[i].total_medals}</td>
+            </tr>`;
         }
-        line += `<tr><td>${top30[i].name}</td>
-        <td>${top30[i].gold_medals}</td>
-        <td>${top30[i].silver_medals}</td>
-        <td>${top30[i].bronze_medals}</td>
-        <td>${top30[i].total_medals}</td>
-        </tr>`;
+       
     }    
 
     teste.innerHTML += line;

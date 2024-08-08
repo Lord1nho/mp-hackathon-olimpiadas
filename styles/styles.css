@@ -1,13 +1,24 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #d4d4d4;
 }
 
 .tab-nav {
     display: flex;
     padding: 12px;
-    height: fit-content;
     justify-content: space-between;
+    background-color: transparent;
+    text-transform: uppercase;
+    box-shadow: inset;
+ 
 }
 
 .logo-home {
@@ -16,14 +27,9 @@ body {
 }
 
 .logo-home img {
-    width: 10%;
+    width: 7.5rem;
 }
-.logo-home span {
-    margin: 4px;
-    font-size: 32px;
-    color: #0055A4;
-    font-weight: 800;
-}
+
 
 .menu {
     display: flex;
@@ -34,6 +40,9 @@ body {
  margin: 16px;
  font-size: 16px;
  background-color: transparent;
+ border-radius: 3rem;
+ width: 15rem;
+ color: black;
  font-weight: 800;
  border: none;
 }
@@ -41,6 +50,9 @@ body {
 .menu button:hover{
     font-size: 16px;
     background-color: #EF4135;
+    border-radius: 3rem;
+    width: 15rem;
+    height: 3rem;
     color: #d4d4d4;
     cursor: pointer;
    }
@@ -53,16 +65,36 @@ ESSA PARTE NÃO ESTÁ 100% responsiva OK!
     display: flex;
     flex-direction: column;
     align-items: center; 
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #d4d4d4;
    }
 
 table {
-    width: 600px;
-    border: 2px solid #0055A4;
+    width: 50%;
+    border: 6px solid #EF4135;
     border-collapse: collapse;
+    text-transform: uppercase;
+   }
+
+   table th {
+    height: 40px;
    }
 
 table td {
-    border: 1px solid black;
+    height: 24px;
+    border: 1px solid #0055A4;
+    font-weight: 600;
+}
+
+.quant_medals{
+    text-align: center;
+}
+
+table img {
+    margin: 6px;
+    width: 2rem;
+    vertical-align: middle;
 }
 /*
 nesse elemento brasil position será adicionado um estilo destaque para o brasilzão
@@ -70,4 +102,22 @@ nesse elemento brasil position será adicionado um estilo destaque para o brasil
 
 .brasil_position {
     background-color: green;
+}
+
+
+.unfinished {
+    text-decoration:  line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 4px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    position: sticky;
 }

@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="shortcut icon" type="imagex/png" href="./assets/logotipo-dos-jogos-olimpicos.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Painel Olímpico</title>
 </head>
 
 <body>
  <nav class="tab-nav">
         <div class="logo-home">
-        <img src="assets/logotipo-dos-jogos-olimpicos.png" alt="Logo dos Jogos olímpicos">
-        <span>Olimpíadas 2024</span></div>
+            <a href="index.html"><img src="assets/logotipo-dos-jogos-olimpicos.png" alt="Logo dos Jogos olímpicos"></a>
+       </div>
 
         <section class="menu">
             <button>Painel Geral</button>
-            <button>Próximos Eventos</button>
-            <button>Eventos Finalizados</button>
+            <button class="unfinished">Próximos Eventos</button>
+            <button class="unfinished">Eventos Finalizados</button>
         </section>
  </nav>
  
@@ -27,13 +30,17 @@
     <h2>Top 30 das Olimpíadas</h2>
     <table id="medal_table">
     <tr>
-        <td>País</td>
-        <td>OURO</td>
-        <td>PRATA</td>
-        <td>BRONZE</td>
-        <td>Total</td>
+        <th>País</th>
+        <th>🥇</th>
+        <th>🥈</th>
+        <th>🥉</th>
+        <th>Total</th>
     </tr>
 </table></section>
+<footer><h1>Feito por © Luiz Fernando</h1></br>
+        <a href="https://github.com/Lord1nho">Github</a>
+        <a href="https://www.linkedin.com/in/luiz-fernando-b64245246/">Linkedin</a>
+</footer>
 <script src="./scripts/script.js"></script>
 </body>
 
